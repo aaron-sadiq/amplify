@@ -73,3 +73,40 @@ ul .slick-active {
 .pgDots ul .slick-active {
 	@apply bg-white;
 }
+.pgSlider .block.slick-slide {
+	counter-increment: section;
+	@apply relative before:absolute before:top-0 before:left-0 before:mt-[2px] before:ml-[14px] before:bg-white before:h-[92px] before:w-[92px] before:z-10;
+}
+
+.pgSlider .block.slick-slide::before {
+	clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.pgSlider .block.slick-slide::after {
+	content: counter(section);
+	@apply absolute top-0 left-0 mt-[2px] ml-[14px] h-[92px] w-[92px] inline-flex items-center justify-center text-tiber -translate-x-[20px] -translate-y-[20px] z-20 text-[26px] font-source;
+}
+
+.doubleSided {
+	@apply gap-14;
+	column-count: 2;
+}
+
+.radioCheck input {
+	@apply hidden;
+}
+.radioCheck label {
+	@apply cursor-pointer relative inline-flex text-2xl items-center gap-3 before:flex before:border before:border-tiber before:rounded-full before:h-14 before:w-14 after:absolute after:flex after:rounded-full after:h-14 after:w-14 after:z-[1];
+}
+.radioCheck input:checked ~ label:before {
+	@apply bg-vi border-vi;
+}
+.radioCheck label:after {
+	@apply opacity-0;
+	background-image: url(../images/check.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 65%;
+}
+.radioCheck input:checked ~ label:after {
+	@apply opacity-100;
+}
