@@ -966,14 +966,6 @@ a,
   height: 100%;
 }
 
-.min-h-\[730px\]{
-  min-height: 730px;
-}
-
-.min-h-\[720px\]{
-  min-height: 720px;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -1628,12 +1620,12 @@ ul .slick-active{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.pgSlider .block.slick-slide {
+.pgSlider .justify-between.slick-slide {
   counter-increment: section;
   position: relative;
 }
 
-.pgSlider .block.slick-slide::before{
+.pgSlider .justify-between.slick-slide::before{
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1649,7 +1641,7 @@ ul .slick-active{
           clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
-.pgSlider .block.slick-slide::after {
+.pgSlider .justify-between.slick-slide::after {
   content: counter(section);
   position: absolute;
   top: 0px;
@@ -1758,6 +1750,10 @@ ul .slick-active{
 .slick-initialized .slick-slide{
   display: flex !important;
   flex-direction: column;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
 }
 
 .placeholder\:text-tiber::-moz-placeholder{
@@ -2841,10 +2837,6 @@ ul .slick-active{
 
   .xl\:\[\&\>i\]\:top-\[30\%\]>i{
     top: 30%;
-  }
-
-  .xl\:\[\&\>i\]\:top-\[65\%\]>i{
-    top: 65%;
   }
 
   .xl\:\[\&\>i\]\:top-\[60\%\]>i{

@@ -37,14 +37,6 @@
 		transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 	}
 
-	.rotate-x-90 {
-		transform: rotateX('90deg');
-	}
-
-	.rotate-x-0 {
-		transform: rotateX('0deg');
-	}
-
 	/* Scroll Bar */
 	.x-scroll::-webkit-scrollbar {
 		@apply h-[7px] bg-transparent;
@@ -73,15 +65,15 @@ ul .slick-active {
 .pgDots ul .slick-active {
 	@apply bg-white;
 }
-.pgSlider .block.slick-slide {
+.pgSlider .justify-between.slick-slide {
 	counter-increment: section;
 	@apply relative before:absolute before:top-0 before:left-0 before:mt-[2px] before:ml-[14px] before:bg-white before:h-[92px] before:w-[92px] before:z-10;
 }
 
-.pgSlider .block.slick-slide::before {
+.pgSlider .justify-between.slick-slide::before {
 	clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
-.pgSlider .block.slick-slide::after {
+.pgSlider .justify-between.slick-slide::after {
 	content: counter(section);
 	@apply absolute top-0 left-0 mt-[2px] ml-[14px] h-[92px] w-[92px] inline-flex items-center justify-center text-tiber -translate-x-[20px] -translate-y-[20px] z-20 text-[26px] font-source;
 }
@@ -112,4 +104,8 @@ ul .slick-active {
 }
 .slick-initialized .slick-slide {
 	@apply !flex flex-col;
+}
+
+.rotate-y-180 {
+	transform: rotateY(180deg);
 }
