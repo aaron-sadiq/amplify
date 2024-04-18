@@ -28,7 +28,7 @@
 		@apply inline-flex xl:h-14 lg:h-12 md:h-11 h-10 min-w-[120px] items-center justify-center whitespace-nowrap bg-vi text-lg text-white pb-1 px-5 rounded-full;
 	}
 	.btn-outline {
-		@apply inline-flex xl:h-14 lg:h-12 md:h-11 h-10 min-w-[120px] items-center justify-center whitespace-nowrap border-tiber text-lg font-medium text-tiber pb-1 px-5 rounded-full border-2 hover:bg-tiber hover:text-white;
+		@apply inline-flex xl:h-14 lg:h-12 md:h-11 h-10 min-w-[145px] items-center justify-center whitespace-nowrap border-tiber text-lg font-medium text-tiber pb-1 px-5 rounded-full border-2 hover:bg-tiber hover:text-white;
 	}
 }
 
@@ -95,7 +95,7 @@ ul .slick-active {
 	@apply hidden;
 }
 .radioCheck label {
-	@apply cursor-pointer relative inline-flex text-2xl items-center gap-3 before:flex before:border before:border-tiber before:rounded-full before:h-14 before:w-14 after:absolute after:flex after:rounded-full after:h-14 after:w-14 after:z-[1];
+	@apply text-[#535453] cursor-pointer relative inline-flex xl:text-2xl lg:text-xl md:text-lg text-base items-center gap-3 before:flex before:border-[2px] before:border-tiber before:rounded-full before:h-14 before:w-14 after:absolute after:flex after:rounded-full after:h-14 after:w-14 after:z-[1];
 }
 .radioCheck input:checked ~ label:before {
 	@apply bg-vi border-vi;
@@ -109,4 +109,7 @@ ul .slick-active {
 }
 .radioCheck input:checked ~ label:after {
 	@apply opacity-100;
+}
+.slick-initialized .slick-slide {
+	@apply !flex flex-col;
 }

@@ -623,7 +623,7 @@ a,
 .btn-outline{
   display: inline-flex;
   height: 2.5rem;
-  min-width: 120px;
+  min-width: 145px;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
@@ -790,6 +790,10 @@ a,
   margin-bottom: 5rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .mb-28{
   margin-bottom: 7rem;
 }
@@ -816,6 +820,10 @@ a,
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mb-auto{
+  margin-bottom: auto;
 }
 
 .ml-5{
@@ -846,10 +854,6 @@ a,
   margin-top: 0.75rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -864,6 +868,10 @@ a,
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .block{
@@ -956,6 +964,14 @@ a,
 
 .h-full{
   height: 100%;
+}
+
+.min-h-\[730px\]{
+  min-height: 730px;
+}
+
+.min-h-\[720px\]{
+  min-height: 720px;
 }
 
 .w-10{
@@ -1061,6 +1077,10 @@ a,
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -1161,6 +1181,11 @@ a,
 .border-tiber{
   --tw-border-opacity: 1;
   border-color: rgb(21 64 63 / var(--tw-border-opacity));
+}
+
+.border-vi{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 70 151 / var(--tw-border-opacity));
 }
 
 .border-white{
@@ -1663,8 +1688,10 @@ ul .slick-active{
   cursor: pointer;
   align-items: center;
   gap: 0.75rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(83 84 83 / var(--tw-text-opacity));
 }
 
 .radioCheck label::before{
@@ -1672,7 +1699,7 @@ ul .slick-active{
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 9999px;
-  border-width: 1px;
+  border-width: 2px;
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(21 64 63 / var(--tw-border-opacity));
@@ -1686,6 +1713,27 @@ ul .slick-active{
   width: 3.5rem;
   content: var(--tw-content);
   border-radius: 9999px;
+}
+
+@media (min-width: 768px){
+  .radioCheck label{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 992px){
+  .radioCheck label{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .radioCheck label{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .radioCheck input:checked ~ label:before{
@@ -1705,6 +1753,11 @@ ul .slick-active{
 
 .radioCheck input:checked ~ label:after{
   opacity: 1;
+}
+
+.slick-initialized .slick-slide{
+  display: flex !important;
+  flex-direction: column;
 }
 
 .placeholder\:text-tiber::-moz-placeholder{
@@ -2132,6 +2185,10 @@ ul .slick-active{
 
   .lg\:h-full{
     height: 100%;
+  }
+
+  .lg\:min-h-\[730px\]{
+    min-height: 730px;
   }
 
   .lg\:w-auto{
@@ -2784,6 +2841,14 @@ ul .slick-active{
 
   .xl\:\[\&\>i\]\:top-\[30\%\]>i{
     top: 30%;
+  }
+
+  .xl\:\[\&\>i\]\:top-\[65\%\]>i{
+    top: 65%;
+  }
+
+  .xl\:\[\&\>i\]\:top-\[60\%\]>i{
+    top: 60%;
   }
 
   .xl\:\[\&\>i\]\:-translate-y-1\/2>i{
