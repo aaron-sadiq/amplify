@@ -67,7 +67,7 @@
   <!-- * BANNER END -->
 
   <!-- ! Content Start -->
-  <div class="container mx-auto xl:pt-24 lg:pt-20 md:pt-16 pt-12">
+  <div class="px-5 container mx-auto xl:pt-24 lg:pt-20 md:pt-16 pt-12">
     <h2
       class="block font-source font-light text-vi 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl leading-none xl:mb-7 lg:mb-6 md:mb-5 mb-4 sm:text-left text-center">
       Hello and welcome
@@ -233,10 +233,130 @@
         </div>
       </div>
     </div>
-    <div class="block mb-24">
-      <label class="font-source font-light text-tiber xl:text-[40px] lg:text-3xl text-2xl" for="">
+    <div class="block mb-20">
+      <div
+        class="inline-flex flex-col w-full border-b border-tiber lg:mb-4 md:mb-2 mb-1 xl:max-w-[870px] lg:max-w-[665px] md:max-w-[540px] max-w-[456px] pb-3">
+        <input type="text"
+          class="max-w-full flex font-source md:font-light font-normal text-tiber xl:text-[40px] lg:text-3xl md:text-2xl sm:text-xl text-lg border-none !outline-none ring-0 w-full bg-transparent placeholder:text-tiber"
+          placeholder="What is the name of your VC Firm/Syndicate/Fund?">
+      </div>
+      <label class="label" for="">
         If you're an individual, please leave blank
       </label>
+    </div>
+    <div class="block mb-24">
+      <label class="font-source font-light text-tiber xl:text-[40px] lg:text-3xl text-2xl" for="">
+        What's your industry of interest?
+      </label>
+      <div class="flex flex-wrap gap-4 items-center mt-6 mb-8">
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="int_e">
+          <label for="int_e">Food and Drinks</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="int_d">
+          <label for="int_d">Food Technology</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="int_c">
+          <label for="int_c">Brands & Restaurants</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="int_b">
+          <label for="int_b">All</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="int_a">
+          <label for="int_a">None</label>
+        </div>
+      </div>
+    </div>
+    <div class="block mb-20">
+      <div
+        class="inline-flex flex-col w-full border-b border-tiber lg:mb-4 md:mb-2 mb-1 xl:max-w-[870px] lg:max-w-[665px] md:max-w-[540px] max-w-[456px] pb-3">
+        <input type="number"
+          class="max-w-full flex font-source md:font-light font-normal text-tiber xl:text-[40px] lg:text-3xl md:text-2xl sm:text-xl text-lg border-none !outline-none ring-0 w-full bg-transparent placeholder:text-tiber"
+          placeholder="The amount you are looking to invest per deal">
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="inv_a">
+          <label for="inv_a">$US</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="inv_b">
+          <label for="inv_b">£GBP</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="inv_c">
+          <label for="inv_c">XXX</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="inv_d">
+          <label for="inv_d">XXX</label>
+        </div>
+      </div>
+    </div>
+    <div class="block mb-16">
+      <label for="" class="label">In 100 words or less, give us a brief description of your knowledge, experience and
+        what non-monetary value you would provide to a founder, management team or startup.</label>
+      <textarea name="" id="" rows="20"
+        class="py-5 px-4 !ring-0 outline-none font-source md:font-light font-normal text-tiber xl:text-[40px] lg:text-3xl md:text-2xl sm:text-xl text-lg bg-white resize-none w-full mt-6"></textarea>
+    </div>
+    <div class="block mb-24">
+      <label class="font-source font-light text-tiber xl:text-[40px] lg:text-3xl text-2xl" for="">
+        Would you be interested in being an Amplify Mentor to Start-Ups?
+      </label>
+      <div class="label-1/2 mt-6">As leaders in the startup ecosystem, Amplify Mentors are well positioned to mentor
+        collaborate
+        with the Founders as they have top experience in their field whilst also having developinged their leadership
+        capabilityies and builtding their own network outside of their organisation.
+      </div>
+      <div class="flex flex-wrap gap-4 items-center mt-6 mb-8">
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="mentor_e">
+          <label for="mentor_e">Yes</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="mentor_d">
+          <label for="mentor_d">No</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="mentor_c">
+          <label for="mentor_c">Not right now</label>
+        </div>
+      </div>
+    </div>
+    <!-- Field  -->
+    <div class="block mb-24">
+      <label class="font-source font-light text-tiber xl:text-[40px] lg:text-3xl text-2xl" for="">
+        Who do you know from Amplify?
+      </label>
+      <div class="flex flex-wrap gap-4 items-center mt-6 mb-8">
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="reference_e">
+          <label for="reference_e">Edin Basic</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="reference_d">
+          <label for="reference_d">Ashon Spooner</label>
+        </div>
+        <div class="radioCheck inline-flex items-center gap-3">
+          <input type="radio" name="investor_type" id="reference_c">
+          <label for="reference_c">Olcar Tosun</label>
+        </div>
+      </div>
+    </div>
+    <!-- Field -->
+    <div class="block mb-8">
+      <label class="font-source font-light text-tiber xl:text-[40px] lg:text-3xl text-2xl" for="">Are there any other
+        ways you're thinking of partnering with Amplify</label>
+      <textarea name="" id="" rows="15"
+        class="py-5 px-4 !ring-0 outline-none font-source md:font-light font-normal text-tiber xl:text-[40px] lg:text-3xl md:text-2xl sm:text-xl text-lg bg-white resize-none w-full mt-6"></textarea>
+      <p class="text-lg text-tiber mt-4">Leave blank if no</p>
+    </div>
+    <div class="text-right pb-20">
+      <button class="btn-outline">Submit</button>
     </div>
   </form>
   <!-- Form End -->

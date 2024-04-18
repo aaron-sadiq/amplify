@@ -766,6 +766,10 @@ a,
   margin-bottom: 4rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -852,6 +856,10 @@ a,
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .mt-5{
@@ -998,6 +1006,10 @@ a,
   max-width: 380px;
 }
 
+.max-w-\[456px\]{
+  max-width: 456px;
+}
+
 .max-w-\[600px\]{
   max-width: 600px;
 }
@@ -1037,6 +1049,10 @@ a,
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize-none{
+  resize: none;
 }
 
 .resize{
@@ -1276,6 +1292,11 @@ a,
   padding-right: 0.75rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1348,6 +1369,14 @@ a,
   padding-bottom: 3rem;
 }
 
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -1398,6 +1427,10 @@ a,
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-start{
@@ -1537,6 +1570,17 @@ a,
   outline-offset: 2px !important;
 }
 
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.\!ring-0{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+}
+
 .ring-0{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1665,13 +1709,96 @@ ul .slick-active{
 }
 
 .doubleSided{
-  gap: 3.5rem;
-  -moz-column-count: 2;
-       column-count: 2;
+  gap: 2rem;
+}
+
+@media (min-width: 768px){
+  .doubleSided{
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 992px){
+  .doubleSided{
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .doubleSided{
+    gap: 3.5rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .doubleSided {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
 
 .radioCheck input{
   display: none;
+}
+
+.label{
+  position: relative;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(83 84 83 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .label{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 992px){
+  .label{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .label{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.label-1\/2{
+  position: relative;
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(83 84 83 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .label-1\/2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 992px){
+  .label-1\/2{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .label-1\/2{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .radioCheck label{
@@ -1688,8 +1815,8 @@ ul .slick-active{
 
 .radioCheck label::before{
   display: flex;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 9999px;
   border-width: 2px;
   content: var(--tw-content);
@@ -1701,8 +1828,8 @@ ul .slick-active{
   position: absolute;
   z-index: 1;
   display: flex;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2rem;
+  width: 2rem;
   content: var(--tw-content);
   border-radius: 9999px;
 }
@@ -1712,6 +1839,18 @@ ul .slick-active{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .radioCheck label::before{
+    height: 2.5rem;
+    content: var(--tw-content);
+    width: 2.5rem;
+  }
+
+  .radioCheck label::after{
+    height: 2.5rem;
+    content: var(--tw-content);
+    width: 2.5rem;
+  }
 }
 
 @media (min-width: 992px){
@@ -1719,12 +1858,36 @@ ul .slick-active{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .radioCheck label::before{
+    height: 3rem;
+    content: var(--tw-content);
+    width: 3rem;
+  }
+
+  .radioCheck label::after{
+    height: 3rem;
+    content: var(--tw-content);
+    width: 3rem;
+  }
 }
 
 @media (min-width: 1200px){
   .radioCheck label{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .radioCheck label::before{
+    height: 3.5rem;
+    content: var(--tw-content);
+    width: 3.5rem;
+  }
+
+  .radioCheck label::after{
+    height: 3.5rem;
+    content: var(--tw-content);
+    width: 3.5rem;
   }
 }
 
@@ -1879,6 +2042,11 @@ ul .slick-active{
     text-align: left;
   }
 
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:font-light{
     font-weight: 300;
   }
@@ -1915,6 +2083,10 @@ ul .slick-active{
     margin-bottom: 3rem;
   }
 
+  .md\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
   .md\:mb-24{
     margin-bottom: 6rem;
   }
@@ -1949,6 +2121,10 @@ ul .slick-active{
 
   .md\:block{
     display: block;
+  }
+
+  .md\:max-w-\[540px\]{
+    max-width: 540px;
   }
 
   .md\:max-w-full{
@@ -2049,6 +2225,10 @@ ul .slick-active{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:font-light{
+    font-weight: 300;
   }
 }
 
@@ -2193,6 +2373,10 @@ ul .slick-active{
 
   .lg\:min-w-\[180px\]{
     min-width: 180px;
+  }
+
+  .lg\:max-w-\[665px\]{
+    max-width: 665px;
   }
 
   .lg\:grow-0{
@@ -2491,6 +2675,10 @@ ul .slick-active{
 
   .xl\:h-10{
     height: 2.5rem;
+  }
+
+  .xl\:max-w-\[870px\]{
+    max-width: 870px;
   }
 
   .xl\:flex-col{
