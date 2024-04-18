@@ -974,6 +974,22 @@ a,
   height: 100%;
 }
 
+.min-h-\[100vw\]{
+  min-height: 100vw;
+}
+
+.min-h-\[60vw\]{
+  min-height: 60vw;
+}
+
+.min-h-\[30vw\]{
+  min-height: 30vw;
+}
+
+.min-h-\[25vw\]{
+  min-height: 25vw;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1357,6 +1373,11 @@ a,
   padding-bottom: 4vw;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -1616,6 +1637,10 @@ a,
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* Scroll Bar */
@@ -2469,6 +2494,16 @@ ul .slick-active{
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:pb-1{
