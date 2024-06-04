@@ -49,13 +49,14 @@ $(document).ready(function () {
         nextArrow: '<i class="fa-thin fa-chevron-circle-right hover:text-vi"></i>'
     });
     $('.pgSlider').slick({
-        infinite: false,
+        infinite: true,
         autoplay: true,
+        centerMode: true,
         autoplaySpeed: 3500,
         cssEase: 'ease-out',
         speed: 300,
         dots: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         appendDots: $('.pgDots'),
         appendArrows: $('.pgSlider'),
@@ -65,7 +66,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1600,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -184,4 +185,5 @@ $(document).ready(function () {
     //         : sidebarDrop.removeClass('h-auto').addClass('h-0') && dropCaret.removeClass('rotate-180')
     //     });
     // });
+    AOS.init();
 });

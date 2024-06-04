@@ -1,0 +1,41 @@
+/* Banner Style Start */
+.col-group {display: flex; flex-wrap: wrap; gap: 5px;}
+.col-group .col-3 {max-width: 33.333%; flex: 0 0 33.333%;}
+.col-group .col-9 {width: 66.333%; flex: 0 0 66.333%;}
+
+.banner-media {height: 950px; overflow: hidden;}
+.banner-media figure {position: relative; height: 100%;}
+.banner-media figcaption {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: flex-end; justify-content: flex-end;}
+.banner-media figure img {width: 100%; height: 100%; object-fit: cover;}
+.caption-text {background-color: #fff;border-left: 10px solid #EE4796;width: 884px;padding: 60px 30px 60px 60px; min-height: 550px; display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;}
+.caption-text h2 {font-family: Source Serif Pro;font-size: 66.3px;font-weight: 700;line-height: 69.78px;text-align: left;}
+.caption-text p {font-family: Inter; font-size: 24px; font-weight: 500; line-height: 35px; text-align: left;}
+.get-started-btn {background-color: #EE4796; min-width: 258px; min-height: 60px; display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; font-family: Inter; font-size: 20px; font-weight: 700; line-height: 35px; text-align: left; color: #fff;}
+/* Banner Style End */
+.pgSlider .slick-list {padding:0 35% 0 0 !important;}
+.bg-swamp .pl-200 {padding-left: 200px;}
+.pgSlider .slick-arrow {right: 100px !important;}
+
+@media screen and (max-width: 992px) {
+  .banner-media {height: auto;}
+  .caption-text {width: 100%; padding: 25px 20px; min-height: auto;height: 100%;}
+  .caption-text h2 {font-size: 36px; line-height: 42px;}
+  .caption-text p {font-size: 18px; line-height: 24px;}
+  .bg-swamp .pl-200 {padding-left: 0;}
+  .pgSlider .slick-list {padding: 0 !important;}
+  .pgSlider .slick-arrow {right: 30px !important;}
+  .pgSlider .slick-arrow:first-of-type {right: auto !important; left: 30px;}
+}
+
+@media screen and (max-width: 767px) {
+  .col-group .col-9 {width: 100%; flex: 0 0 100%;}
+  .col-group .col-3 {max-width: 100%;flex: 0 0 100%;}
+}
+
+@media screen and (max-width: 576px) {
+  .caption-text h2 br,
+  .caption-text p br {display: none;}
+  .get-started-btn {min-width: 200px; min-height: 50px; font-size: 16px; line-height: 22px;}
+  .caption-text h2 {font-size: 24px; line-height: 30px; margin-bottom: 10px;}
+  .caption-text p {font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+}
