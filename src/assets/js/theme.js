@@ -130,19 +130,25 @@ jQuery(function($) {
         nextArrow: '<i class="fa-thin fa-chevron-circle-right hover:text-vi"></i>',
         responsive: [
             {
-                breakpoint: 1600,
+                breakpoint: 1299,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -164,19 +170,19 @@ jQuery(function($) {
         nextArrow: '<i class="fa-thin fa-chevron-circle-right hover:text-vi"></i>',
         responsive: [
             {
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 1400,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
                 }
