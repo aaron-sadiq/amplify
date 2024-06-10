@@ -129,7 +129,7 @@ ul,ol{
 }
 .social-icon a {
 	width: 20px;
-	height: 20px;
+	height: 28px;
 	margin: 0 15px 0 0;
 }
 .social-icon a img{
@@ -358,14 +358,18 @@ ul,ol{
 	margin-bottom: 40px;
 	font-weight: 300;
 }
+.testimonials-img{
+    height:100%;
+}
 .testimonials-img img{
     width:100%;
     -o-object-fit: cover;
     object-fit: cover;
     border:1px solid #163F3E;
+    height:100%;
 }
 .testimonials-img {
-	padding-right: 50px;
+	padding-right: 20px;
 }
 .testimonials-details h3{
     font-size:26px;
@@ -400,9 +404,9 @@ ul,ol{
 }
 
 /** **/
-#testimonials-slider .item{
+/* #testimonials-slider .item{
 	padding: 0 60px;
-}
+} */
 #testimonials-slider .owl-nav button.owl-next,
 #testimonials-slider .owl-nav button.owl-prev {
 	height: 30px;
@@ -416,10 +420,10 @@ ul,ol{
     background:#fff;
 }
 #testimonials-slider .owl-nav button.owl-next{
-    right:0;
+    right:-80px;
 } 
 #testimonials-slider .owl-nav button.owl-prev {
-    left:0;
+    left:-80px;
 }
 #testimonials-slider .owl-nav button.owl-next:hover,
 #testimonials-slider .owl-nav button.owl-prev:hover{
@@ -481,7 +485,7 @@ ul,ol{
     right: 80px;
 }
 .program-card{
-    height:455px;
+    /* height:455px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -700,6 +704,7 @@ ul,ol{
 .services-box p {
 	font-size: 14px;
 	line-height: 20px;
+	min-height: 80px;
 }
 .services-box .default-btn {
 	font-size: 12px;
@@ -818,6 +823,7 @@ ul,ol{
 .section-portfolio .portfolio-para {
 	font-size: 16px;
 	line-height: 24px;
+    font-family: 'Source Serif 4', serif;
 }
 .section-portfolio .portfolio-para,
 .section-portfolio .form-box h3,
@@ -1055,9 +1061,9 @@ ul,ol{
 .dish-menu .testimonials-details p {
 	font-weight: 300;
 }
-#menu-slider .owl-stage-outer .item {
+/* #menu-slider .owl-stage-outer .item {
 	padding: 0 80px;
-}
+} */
 .dish-menu .testimonials-img {
 	padding-right: 20px;
 }
@@ -1080,10 +1086,10 @@ ul,ol{
     top: 40%;
 }
 #menu-slider .owl-nav button.owl-next{
-    right:0;
+    right:-80px;
 } 
 #menu-slider .owl-nav button.owl-prev {
-    left:0;
+	left: -80px;
 }
 #menu-slider .owl-nav button.owl-next:hover,
 #menu-slider .owl-nav button.owl-prev:hover{
@@ -1166,6 +1172,7 @@ ul,ol{
 	margin-bottom: 20px;
 	font-family: 'Source Serif 4', serif;
 	color: #EE4796;
+    font-weight:300;
 }
 .welcome-heading p {
 	font-size: 16px;
@@ -1424,9 +1431,9 @@ ul,ol{
     .program-wrapp h5{
         font-size:32px;
     }
-    .program-card {
+    /* .program-card {
         height:630px;
-    }
+    } */
     .program-card-detail h3 {
         font-size: 42px;
         min-height: 97px;
@@ -1436,7 +1443,6 @@ ul,ol{
         height: 92px;
         width: 92px;
         font-size: 26px;
-        padding: 5px 25px 0 0;
     }
     .program-card-detail p {
         font-size: 16px;
@@ -1574,8 +1580,8 @@ ul,ol{
     /** **/
     #menu-slider .owl-nav button.owl-next,
     #menu-slider .owl-nav button.owl-prev {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
     .dish-menu .testimonials-details p {
         font-size: 26px;
@@ -1754,7 +1760,7 @@ ul,ol{
     }
     .menu-wrapp .social-icon {
         justify-content: center;
-        margin: 30px 0;
+        margin: 20px 0 35px 0;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         padding: 11px 0;
@@ -1959,9 +1965,9 @@ ul,ol{
     #testimonials-slider .item {
         padding: 0;
     }
-    .program-card {
+    /* .program-card {
         height: 365px;
-    }
+    } */
     .testimonials-img img {
         max-width: 250px;
         margin-bottom: 30px;
@@ -2224,5 +2230,8 @@ ul,ol{
     }
     .portfolio-forms textarea.form-input {
         min-height: 200px;
+    }
+    .section-portfolio {
+        padding: 50px 0 0;
     }
 }

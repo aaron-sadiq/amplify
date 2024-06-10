@@ -14,9 +14,9 @@ jQuery(function($) {
             items: 1,
             loop: true,
             nav: false,
-            autoplay: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
             dots: true,
-            smartSpeed: 3000,
             animateOut: 'fadeOut',
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
@@ -33,9 +33,16 @@ jQuery(function($) {
             items: 1,
             loop: true,
             autoplay: true,
+            autoplayTimeout: 2000,
             dots: true,
-            nav: true,
+            nav: false,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
+            responsiveClass:true,
+            responsive:{
+                768:{
+                    nav: true,
+                },
+            }                
         });
     });
     $(function() {
@@ -44,11 +51,11 @@ jQuery(function($) {
             items: 4,
             loop: true,
             autoplay: true,
+            autoplayTimeout: 2000,
             stagePadding: 80,
             margin:20,
             dots: true,
-            nav: true,
-            smartSpeed: 3000,
+            nav: false,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
@@ -62,6 +69,7 @@ jQuery(function($) {
                 },
                 768:{
                     items: 2,
+                    nav: true,
                 },
                 992:{
                     items: 3,
@@ -78,9 +86,9 @@ jQuery(function($) {
             items: 3,
             loop: true,
             autoplay: true,
+            autoplayTimeout: 2000,
             dots: true,
             nav: true,
-            smartSpeed: 3000,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
@@ -103,9 +111,9 @@ jQuery(function($) {
             margin:20,
             loop: true,
             autoplay: true,
+            autoplayTimeout: 2000,
             dots: true,
-            nav: true,
-            smartSpeed: 3000,
+            nav: false,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
@@ -114,10 +122,10 @@ jQuery(function($) {
                 },
                 576:{
                     items: 2,
-                    nav: false,
                 },
                 768:{
                     items: 3,
+                    nav: true,
                 },
             }
         });
@@ -128,9 +136,16 @@ jQuery(function($) {
             items: 1,
             loop: true,
             autoplay: true,
+            autoplayTimeout: 2000,
             dots: true,
-            nav: true,
+            nav: false,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
+            responsiveClass:true,
+            responsive:{
+                768:{
+                    nav: true,
+                },
+            }
         });
     });
 });
