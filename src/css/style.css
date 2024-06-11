@@ -99,19 +99,49 @@ ul,ol{
     color: #fff;
 }
 
-
 /* ================================= */
 /* ---------- HEADER CSS ----------- */
 /* ================================= */
 /** Header **/
-.main-nav .logo,
+.main-header {
+	padding:20px 0;
+}
 .main-nav .menu-btn,
-.main-nav .social-icon,
 .main-nav .top-header-btn{
     display: none;
 }
 .header-top {
-	padding: 0 10vw;
+	margin-bottom:10px;
+}
+.top-header-btn{
+    text-align: right;
+}
+.top-header-btn a {
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	background: #EE4796;
+	border: 1px solid #EE4796;
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 40px;
+	transition: ease all 0.5s;
+}
+.top-header-btn a:hover{
+    background:transparent;
+    border-color:#EE4796;
+    color:#EE4796;
+}
+
+/** Main Nav **/
+.main-nav .logo {
+	max-width: 180px;
+	display: block;
+}
+.main-nav .logo img {
+	width: 100%;
+}
+.main-nav {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -122,46 +152,6 @@ ul,ol{
     -ms-flex-align: center;
     align-items: center;
 }
-.social-icon{
-    display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-.social-icon a {
-	width: 20px;
-	height: 28px;
-	margin: 0 15px 0 0;
-}
-.social-icon a img{
-    width:100%;
-}
-.social-icon a:hover{
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-.logo {
-	display: block;
-	max-width: 150px;
-	width: 100%;
-	text-align: center;
-}
-.logo img{
-	width: 100%;
-}
-.top-header-btn a {
-	display: inline-block;
-	border-top: 2px solid;
-	padding: 14px;
-	color: #EE4796;
-	font-weight: 700;
-	font-size: 16px;
-}
-
-/** Main Nav **/
-.main-nav{
-    background:#EE4796;
-	padding: 0 10vw;
-}
 .nav-bar {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -170,26 +160,27 @@ ul,ol{
     -ms-flex-pack: center;
     justify-content: center;
 }
-.nav-bar li{
-    margin:0 20px;
-}
 .nav-bar li a {
 	font-size: 14px;
-	text-transform: uppercase;
-	color: #fff;
+	color: #15403f;
+    border:1px solid #535c53;
 	line-height: 30px;
-	font-weight: 700;
-	margin: 8px 0;
+	font-weight: 400;
+	margin:0 5px;
 	border-radius: 40px;
 	display: inline-block;
 	position: relative;
 	transition: ease all 0.5s;
 	padding: 0 15px;
 }
+.nav-bar li:last-child a{
+    margin-right:0;
+}
 .nav-bar li a:hover,
 .nav-bar li .active{
-    background: #fff;
-    color: #EE4796;
+    background: #EE4796;
+    color: #fff;
+    border-color:#EE4796;
 }
 
 /* ================================= */
@@ -807,25 +798,27 @@ ul,ol{
 .section-portfolio .portfolio-title,
 .section-portfolio .form-box h2,
 .section-portfolio .form-box h3,
-.portfolio-forms .form-col h3 {
+.portfolio-forms .form-col h3,
+.section-portfolio .portfolio-para {
     font-weight: 300;
     line-height: 1;
     font-family: 'Source Serif 4', serif;
 }
 .section-portfolio .portfolio-title,
-.section-portfolio .form-box h2 {
+.section-portfolio .form-box h2,
+.section-portfolio .portfolio-para {
     color: #EE4796;
     margin: 0 0 48px 0;
 }
-.section-portfolio .form-box h2 {
-    font-size: 32px;
+.section-portfolio .form-box h2, 
+.section-portfolio .portfolio-para {
+	font-size: 30px;
+	line-height: 40px;
 }
 .section-portfolio .portfolio-para {
-	font-size: 16px;
-	line-height: 24px;
-    font-family: 'Source Serif 4', serif;
+	color: #EE4796;
 }
-.section-portfolio .portfolio-para,
+
 .section-portfolio .form-box h3,
 .section-portfolio .form-box p,
 .portfolio-forms .form-col p {
@@ -1293,10 +1286,22 @@ ul,ol{
         line-height: 31px;
         height: 53px;
     }
-    .container-fluid,
-    .header-top{
+    .container-fluid{
         padding-left: 12vw;
         padding-right: 12vw;
+    }
+    .main-header {
+        padding: 15px 0;
+    }
+    .header-top {
+        margin-bottom: 20px;
+    }
+    .top-header-btn a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .main-nav .logo {
+        max-width: 250px;
     }
     #main-slider .owl-dots {
         padding-left: 12vw;
@@ -1304,25 +1309,12 @@ ul,ol{
     #main-slider .owl-nav {
         padding-right: 12vw;
     }
-    .logo {
-        max-width: 250px;
-    }
-    .social-icon a {
-        width: 28px;
-        height: 28px;
-        margin: 0 20px 0 0;
-    }
-    .top-header-btn a {
-        padding: 26px 20px;
-        font-size: 20px;
-    }
     .nav-bar li a {
         font-size: 16px;
         line-height: 35px;
-        margin: 12px 0;
-        padding: 3px 15px;
+        padding: 3px 30px;
+        margin: 0 10px;
     }
-
     /** Banner **/
     .default-btn {
         font-size: 20px;
@@ -1565,12 +1557,10 @@ ul,ol{
     .section-portfolio .portfolio-title {
         font-size: 62px;
     }
-    .section-portfolio .portfolio-para {
-        font-size: 26px;
-        line-height: 32px;
-    }
-    .section-portfolio .form-box h2 {
+    .section-portfolio .form-box h2, .section-portfolio .portfolio-para {
         font-size: 60px;
+        line-height: 66px;
+        font-weight: 300;
     }
     .section-portfolio .form-box h3 {
         font-size: 32px;
@@ -1632,8 +1622,9 @@ ul,ol{
 }
 
 @media (max-width:1199px){
-    .nav-bar li {
-        margin:0 8px;
+    .container-fluid {
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
     .nav-bar li a {
         padding: 0 13px;
@@ -1679,17 +1670,18 @@ ul,ol{
     }
 }
 @media (max-width:991px){
-    .header-top{
-        display: none;
-    }
-    .main-nav .logo,
     .main-nav .menu-btn,
-    .main-nav .social-icon,
     .main-nav .top-header-btn{
         display: block;
     }
-    .main-nav .social-icon{
-        display: flex;
+    .header-top {
+        display: none;
+    }
+    .main-header {
+        padding: 0;
+    }
+    .main-header .container-fluid {
+        padding: 0;
     }
     .menu-wrapp {
         position: fixed;
@@ -1745,8 +1737,9 @@ ul,ol{
     .main-nav .menu-btn img{
         margin-left:5px;
     }
-    .logo {
-        max-width: 130px;
+    .main-nav .logo {
+        max-width: 150px;
+        display: block;
     }
     .nav-bar {
         display: block;
@@ -1754,31 +1747,13 @@ ul,ol{
     }
     .nav-bar li a {
         color: #163F3E;
-        margin: 0;
-        border-radius: 0;
+        margin: 10px 20px;
         padding: 10px 30px;
-    }
-    .menu-wrapp .social-icon {
-        justify-content: center;
-        margin: 20px 0 35px 0;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding: 11px 0;
-    }
-    .top-header-btn a {
-        display: block;
-        border-top: none;
-        padding: 12px 0;
-        color: #fff;
-        font-size: 16px;
-        background: #EE4796;
+        display:block;
         text-align: center;
-        margin: 0 30px;
-        border-radius: 40px;
     }
-    .top-header-btn a:hover{
-        background: #e6207c;
-        color:#fff;
+    .nav-bar li:last-child a {
+        margin-right: 20px;
     }
     .overlay-body {
         position: fixed;
@@ -1965,9 +1940,6 @@ ul,ol{
     #testimonials-slider .item {
         padding: 0;
     }
-    /* .program-card {
-        height: 365px;
-    } */
     .testimonials-img img {
         max-width: 250px;
         margin-bottom: 30px;

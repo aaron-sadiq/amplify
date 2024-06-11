@@ -39,7 +39,7 @@ jQuery(function($) {
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
-                768:{
+                1200:{
                     nav: true,
                 },
             }                
@@ -55,27 +55,27 @@ jQuery(function($) {
             stagePadding: 80,
             margin:20,
             dots: true,
-            nav: false,
+            nav: true,
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
                 0:{
                     items: 1,
-                    nav: false,
                     stagePadding:0,
+                    nav: false,
                 },
                 576:{
                     items: 2,
                 },
                 768:{
                     items: 2,
-                    nav: true,
                 },
                 992:{
                     items: 3,
                 },
                 1200:{
                     items: 4,
+                    nav: true,
                 },
             }
         });
@@ -125,6 +125,8 @@ jQuery(function($) {
                 },
                 768:{
                     items: 3,
+                },
+                1200:{
                     nav: true,
                 },
             }
@@ -142,7 +144,7 @@ jQuery(function($) {
             navText: ['<span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span>'],
             responsiveClass:true,
             responsive:{
-                768:{
+                1200:{
                     nav: true,
                 },
             }
